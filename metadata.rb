@@ -30,23 +30,23 @@ attribute 'openvpn/proto',
           default:      'udp',
           recipes:      ['openvpn']
 
-attribute 'openvpn/type',
-          display_name: 'OpenVPN Type',
-          description:  'Server or server-bridge',
-          default:      'server',
-          recipes:      ['openvpn']
+#attribute 'openvpn/type',
+#          display_name: 'OpenVPN Type',
+#          description:  'Server or server-bridge',
+#          default:      'server',
+#          recipes:      ['openvpn']
 
-attribute 'openvpn/subnet',
-          display_name: 'OpenVPN Subnet',
-          description:  'Subnet to hand out to clients',
-          default:      '10.8.0.0',
-          recipes:      ['openvpn']
+#attribute 'openvpn/subnet',
+#          display_name: 'OpenVPN Subnet',
+#          description:  'Subnet to hand out to clients',
+#          default:      '10.8.0.0',
+#          recipes:      ['openvpn']
 
-attribute 'openvpn/netmask',
-          display_name: 'OpenVPN Netmask',
-          description:  'Netmask for clients',
-          default:      '255.255.0.0',
-          recipes:      ['openvpn']
+#attribute 'openvpn/netmask',
+#          display_name: 'OpenVPN Netmask',
+#          description:  'Netmask for clients',
+#          default:      '255.255.0.0',
+#          recipes:      ['openvpn']
 
 attribute 'openvpn/port',
           display_name: 'OpenVPN Listen Port',

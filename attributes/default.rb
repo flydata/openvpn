@@ -18,7 +18,7 @@
 #
 
 # Set this to false if you want to just use the lwrp
-default['openvpn']['configure_default_server'] = true
+default['openvpn']['configure_default_server'] = false
 
 # Used by helper library to generate certificates/keys
 default['openvpn']['key']['ca_expire'] = 3650
@@ -26,9 +26,9 @@ default['openvpn']['key']['expire']    = 3650
 default['openvpn']['key']['size']      = 1024
 default['openvpn']['key']['country']   = 'US'
 default['openvpn']['key']['province']  = 'CA'
-default['openvpn']['key']['city']      = 'San Francisco'
-default['openvpn']['key']['org']       = 'Fort Funston'
-default['openvpn']['key']['email']     = 'admin@foobar.com'
+default['openvpn']['key']['city']      = 'Mountain View'
+default['openvpn']['key']['org']       = 'FlyData Inc'
+default['openvpn']['key']['email']     = 'support@flydata.com'
 
 # Cookbook attributes
 default['openvpn']['key_dir']         = '/etc/openvpn/keys'
@@ -36,9 +36,9 @@ default['openvpn']['signing_ca_key']  = "#{node["openvpn"]["key_dir"]}/ca.key"
 default['openvpn']['signing_ca_cert'] = "#{node["openvpn"]["key_dir"]}/ca.crt"
 default['openvpn']['user_query']      = '*:*'
 
-default['openvpn']['type']            = 'server'
-default['openvpn']['subnet']          = '10.8.0.0'
-default['openvpn']['netmask']         = '255.255.0.0'
+#default['openvpn']['type']            = 'server'
+#default['openvpn']['subnet']          = '10.8.0.0'
+#default['openvpn']['netmask']         = '255.255.0.0'
 default['openvpn']['user']            = 'nobody'
 default['openvpn']['group']           = case node['platform_family']
                                         when 'rhel'
