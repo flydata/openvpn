@@ -50,6 +50,9 @@ dev tun
 proto udp
 remote <%= node['openvpn']['gateway'] %> <%= node['openvpn']['port'] %>
 resolv-retry infinite
+keepalive 10 120
+auth-user-pass
+auth-nocache
 nobind
 persist-key
 persist-tun
